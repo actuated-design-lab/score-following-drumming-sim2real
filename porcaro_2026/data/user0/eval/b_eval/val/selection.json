@@ -1,0 +1,20 @@
+{
+ "B": {
+  "run": "B_b_seed3",
+  "ckpt": "logs/user0/rsl_rl/porcaro_rslrl_lstm_gen2/2026-11-02_07-13-45_B_b_seed3/model_1499.pt",
+  "success": 0.5433035714285714,
+  "tie_broken_by_dF": false
+ },
+ "E": {
+  "run": "E_b_seed2",
+  "ckpt": "logs/user0/rsl_rl/porcaro_rslrl_mlp_gen2/2026-11-02_03-37-32_E_b_seed2/model_1499.pt",
+  "success": 0.8510957792207792,
+  "tie_broken_by_dF": false
+ },
+ "F0": {
+  "run": "F0_r2",
+  "ckpt": null,
+  "success": 0.7842532467532468,
+  "tie_broken_by_dF": false
+ }
+}

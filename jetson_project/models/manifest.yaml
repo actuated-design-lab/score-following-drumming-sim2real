@@ -1,0 +1,45 @@
+# =============================================================================
+# models/manifest.yaml  —  デプロイ可能なポリシーの定義（唯一の真実）
+#
+# ここに書いた値が「正」。起動時に ONNX の実体（入力数・obs次元）と突き合わせ、
+# 1つでも食い違ったら即エラーで停止する（静かに間違わないため）。
+#
+# 観測ベクトル（sim: porcaro_2026 user0/porcaro_2026_env.py::_get_observations と同一）
+#   obs_version v2（この論文の方策）：拍位相なし、実測圧力 3、接触のラッチフラグ 1（src/obs_v2.py、model_registry.BASE_OBS_BY_VERSION）
+#   L            = round(lookahead_horizon / control_dt)
+#   base_obs_dim = BASE_OBS_BY_VERSION[obs_version] + L
+#   obs_dim      = base_obs_dim * frame_stack
+#   frame_stack>1 のときの並びは [最古 ... 最新]（最新が末尾）。初期値はゼロ埋め。
+# =============================================================================
+
+defaults:
+  control_dt: 0.02        # 制御周期 [s] = 50Hz
+  p_max: 0.6              # 指令圧力の上限 [MPa]   p = (clip(a,-1,1)+1)/2 * p_max
+  target_force: 20.0      # 目標打撃力 [N]（lookahead の正規化に使う）
+  serial_port: /dev/ttyUSB0
+  baud_rate: 230400
+
+# -----------------------------------------------------------------------------
+# Gen2-B（(b) の学習、2026-11）。IEEE Access 論文で実機に配備した 2 方策（LSTM seed 3、MLP seed 2）
+# -----------------------------------------------------------------------------
+GEN2B:
+  B:
+    file: GEN2B/gen2b_B_b_seed3.onnx
+    arch: lstm
+    lookahead_horizon: 0.5
+    frame_stack: 1
+    obs_version: v2
+    label: "Gen2-B: LSTM, lookahead=0.5s, obs v2（圧力・接触、拍位相なし）"
+    run: B_b_seed3
+    seed: 3
+    checkpoint: model_1499.pt
+  E:
+    file: GEN2B/gen2b_E_b_seed2.onnx
+    arch: mlp
+    lookahead_horizon: 0.5
+    frame_stack: 5
+    obs_version: v2
+    label: "Gen2-B: MLP+framestack(k=5), lookahead=0.5s, obs v2"
+    run: E_b_seed2
+    seed: 2
+    checkpoint: model_1499.pt

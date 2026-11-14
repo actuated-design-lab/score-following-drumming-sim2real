@@ -1,0 +1,17 @@
+subset,context,method,success,onsets
+all,after_rest,FF,0.968,252
+all,after_rest,FF-cal,0.925,252
+all,after_rest,MLP,0.437,252
+all,after_rest,LSTM,0.115,252
+all,within_run,FF,0.548,666
+all,within_run,FF-cal,0.503,666
+all,within_run,MLP,0.713,666
+all,within_run,LSTM,0.155,666
+no_double160,after_rest,FF,0.968,249
+no_double160,after_rest,FF-cal,0.928,249
+no_double160,after_rest,MLP,0.438,249
+no_double160,after_rest,LSTM,0.108,249
+no_double160,within_run,FF,0.581,597
+no_double160,within_run,FF-cal,0.506,597
+no_double160,within_run,MLP,0.714,597
+no_double160,within_run,LSTM,0.154,597

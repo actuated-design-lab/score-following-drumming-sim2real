@@ -1,0 +1,8 @@
+{
+ "F0": {
+  "run": "F0_r0",
+  "ckpt": null,
+  "success": 0.719724025974026,
+  "tie_broken_by_dF": false
+ }
+}

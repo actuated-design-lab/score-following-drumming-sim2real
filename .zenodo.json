@@ -1,0 +1,13 @@
+{
+  "title": "Score-Following Drumming via Sim-to-Real Transfer on a Pneumatic Musculoskeletal Percussion Robot: Code and Data",
+  "description": "Simulation and deployment code, trained policy checkpoints, and hardware logs accompanying the IEEE Access paper 'Score-Following Drumming via Sim-to-Real Transfer on a Pneumatic Musculoskeletal Percussion Robot: Feedforward Versus Reinforcement Learning on the Same Identified Model'.",
+  "creators": [
+    {"name": "Biyajima, Tsukasa", "affiliation": "Chuo University", "orcid": "0009-0008-7703-8716"},
+    {"name": "Oku, Ryuku", "affiliation": "Chuo University"},
+    {"name": "Takano, Tomohiro", "affiliation": "Chuo University", "orcid": "0009-0007-5192-9695"},
+    {"name": "Okui, Manabu", "affiliation": "Chuo University", "orcid": "0000-0002-2953-8635"}
+  ],
+  "license": "BSD-3-Clause",
+  "upload_type": "software",
+  "keywords": ["pneumatic artificial muscle", "musculoskeletal robot", "percussion robot", "sim-to-real", "reinforcement learning", "Isaac Lab"]
+}

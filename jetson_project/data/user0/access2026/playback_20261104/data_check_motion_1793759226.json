@@ -1,0 +1,9 @@
+{
+ "kind": "playback",
+ "signal": "check_motion.csv",
+ "elapsed_s": 12.5,
+ "packets_received": 2499,
+ "packets_expected_at_200hz": 2500,
+ "packet_yield": 0.9996,
+ "bytes_discarded_on_resync": 0
+}

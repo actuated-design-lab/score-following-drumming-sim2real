@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+# outputs of the scripts (rebuilt by the commands in README.md)
+paper/figures/*.pdf
+paper/figures/*.aux
+paper/figures/*.log
+porcaro_2026/data/user0/eval/logs/
+porcaro_2026/data/user0/eval/b_eval/val/*/
+porcaro_2026/data/user0/eval/access_1104/sim/
+porcaro_2026/data/user0/eval/access_1104/pkg/paper/
+porcaro_2026/data/user0/eval/access_1110/
+porcaro_2026/data/user0/gen2/
+porcaro_2026/data/user0/ff/logs/
+porcaro_2026/outputs/
+porcaro_2026/logs/user0/rsl_rl/*/*/videos/
+jetson_project/data/user0/test/
+jetson_project/data/user0/*/core2026_score/

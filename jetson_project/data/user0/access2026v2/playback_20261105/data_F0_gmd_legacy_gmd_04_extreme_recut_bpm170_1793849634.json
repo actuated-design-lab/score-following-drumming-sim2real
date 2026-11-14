@@ -1,0 +1,10 @@
+{
+ "kind": "playback",
+ "signal": "F0_gmd_legacy_gmd_04_extreme_recut_bpm170.csv",
+ "elapsed_s": 30.401,
+ "packets_received": 6079,
+ "packets_expected_at_200hz": 6080,
+ "packet_yield": 0.9998,
+ "bytes_discarded_on_resync": 0,
+ "bytes_discarded_at_sync": 35
+}

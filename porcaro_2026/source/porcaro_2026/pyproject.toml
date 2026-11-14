@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel", "toml"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "porcaro_2026"
+version = "0.1.0"
+description = "Embodied Drumming Sim-to-Real Environment for Isaac Lab"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mido>=1.3.0",
+    "pandas>=2.0.0",
+    "matplotlib>=3.10.0",
+    "seaborn>=0.13.0",
+    "scipy>=1.10.0",
+    "wandb>=0.15.0",
+    "tensorboard>=2.14.0",
+]

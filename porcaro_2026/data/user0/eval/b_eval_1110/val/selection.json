@@ -1,0 +1,14 @@
+{
+ "B": {
+  "run": "B_b_seed3",
+  "ckpt": "logs/user0/rsl_rl/porcaro_rslrl_lstm_gen2/2026-11-02_07-13-45_B_b_seed3/model_1499.pt",
+  "success": 0.5129464285714286,
+  "tie_broken_by_dF": false
+ },
+ "E": {
+  "run": "E_b_seed1",
+  "ckpt": "logs/user0/rsl_rl/porcaro_rslrl_mlp_gen2/2026-11-01_15-55-37_E_b_seed1/model_1499.pt",
+  "success": 0.8107954545454545,
+  "tie_broken_by_dF": false
+ }
+}

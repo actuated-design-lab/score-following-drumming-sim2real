@@ -1,0 +1,10 @@
+{
+ "kind": "playback",
+ "signal": "F0_double_lead2_bpm160.csv",
+ "elapsed_s": 7.2,
+ "packets_received": 1440,
+ "packets_expected_at_200hz": 1440,
+ "packet_yield": 1.0,
+ "bytes_discarded_on_resync": 0,
+ "bytes_discarded_at_sync": 0
+}

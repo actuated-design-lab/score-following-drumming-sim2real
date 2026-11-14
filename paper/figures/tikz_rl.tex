@@ -1,0 +1,19 @@
+% Learning framework (fig:rl). Draft; consistent with Section 3.
+\begin{tikzpicture}[font=\footnotesize, node distance=8mm and 6mm,
+  box/.style={draw, rounded corners=1pt, align=center, inner sep=2pt, minimum height=8mm},
+  lab/.style={font=\scriptsize, inner sep=1pt},
+  arr/.style={-{Stealth[length=1.6mm]}, thin}]
+\node[box] (gen) {Rhythm generator\\score $\rightarrow$\\target force};
+\node[box, right=of gen] (obs) {Observation (37): angles,\\velocities, previous commands,\\measured pressures, contact\\flag, BPM, preview 0.5~s};
+\node[box, right=of obs] (pol) {Policy\\LSTM or\\5-frame MLP};
+\node[box, below=of pol] (sim) {Simulator, 2048 envs\\identified actuator model\\domain randomization};
+\node[box, right=8mm of sim] (rew) {Reward\\contact--release\\events};
+\node[box] at (rew |- pol) (ppo) {PPO\\update};
+\draw[arr] (gen) -- (obs);
+\draw[arr] (obs) -- (pol);
+\draw[arr] (pol) -- node[lab, right]{3 pressure commands} (sim);
+\draw[arr] (sim) -- (rew);
+\draw[arr] (rew) -- (ppo);
+\draw[arr, dashed] (ppo) -- node[lab, above]{weights} (pol);
+\draw[arr] (sim.west) -| node[lab, pos=0.25, below]{state} (obs.south);
+\end{tikzpicture}

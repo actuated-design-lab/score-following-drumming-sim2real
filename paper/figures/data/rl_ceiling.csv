@@ -1,0 +1,4 @@
+level,iter_start,iter_end,bpm_range,shortest_note,notes_per_episode,notes_sd,episode_steps,rest_bonus,ceiling
+0,0,299,60-93,eighth,29.57,3.3,1397,4.114,33.68
+1,300,749,60-126,eighth triplet,32.53,3.73,1201,4.105,36.64
+2,750,1499,60-160,sixteenth,47.45,5.76,1065,3.918,51.37

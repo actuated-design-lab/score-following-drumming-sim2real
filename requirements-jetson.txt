@@ -1,0 +1,8 @@
+# jetson_project (robot computer). PyTorch for the Jetson is installed separately (NVIDIA JetPack wheels).
+numpy
+pandas
+scipy
+mido
+pyserial
+PyYAML
+onnxruntime

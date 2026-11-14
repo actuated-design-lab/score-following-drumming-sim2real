@@ -1,0 +1,10 @@
+{
+ "kind": "playback",
+ "signal": "F0_b_calib_01_bpm154.csv",
+ "elapsed_s": 15.36,
+ "packets_received": 3072,
+ "packets_expected_at_200hz": 3072,
+ "packet_yield": 1.0,
+ "bytes_discarded_on_resync": 0,
+ "bytes_discarded_at_sync": 0
+}

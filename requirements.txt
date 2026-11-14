@@ -1,0 +1,11 @@
+# Python packages on top of Isaac Sim 5.0.0 / Isaac Lab v2.2.1 (see README). Versions used in the study.
+mido==1.3.3
+cma==4.5.0
+toml==0.10.2
+pandas==2.3.1
+scipy==1.15.3
+matplotlib==3.10.0
+tensorboard==2.20.0
+onnx==1.18.0
+onnxruntime==1.29.0
+PyYAML==6.0.2

@@ -1,0 +1,17 @@
+motion,motion_id,input,independent,rmse_deg,offset_deg,rmse_rest_deg,rmse_moving_deg,lag_ms,amp_ratio,grip_rmse_deg,grip_amp_ratio,real_log
+Quasi-static,tm_A_quasistatic,measured,False,4.635,-0.211,4.26,5.643,-300,1.172,0.011,1.23,data_tm_A_quasistatic_1791183406.csv
+Quasi-static,tm_A_quasistatic,model,False,4.259,0.172,3.952,5.513,-275,1.172,0.007,0,data_tm_A_quasistatic_1791183406.csv
+Steps,tm_B_steps,measured,False,3.341,-1.147,3.272,4.013,-5,1.092,2.548,0.027,data_tm_B_steps_1791183490.csv
+Steps,tm_B_steps,model,False,3.177,-1.255,2.816,7.077,20,1.067,2.547,0.029,data_tm_B_steps_1791183490.csv
+Sinusoid,tm_C_sine,measured,True,5.893,-1.679,3.855,7.483,0,1.075,6.942,0.005,data_tm_C_sine_1791183590.csv
+Sinusoid,tm_C_sine,model,True,7.517,-2.727,3.967,10.02,25,1.055,6.946,0.002,data_tm_C_sine_1791183590.csv
+Antagonistic,tm_D_antagonist,measured,False,3.53,-2.186,2.694,5.219,0,0.966,5.426,0.005,data_tm_D_antagonist_1791183665.csv
+Antagonistic,tm_D_antagonist,model,False,4.736,-2.125,2.181,8.377,25,0.895,5.433,0,data_tm_D_antagonist_1791183665.csv
+Replay double strokes 1,tm_E_dbl160_seed2,measured,True,6.436,-4.357,4.339,7.506,5,0.925,10.17,0.006,data_tm_E_dbl160_seed2_1791183686.csv
+Replay double strokes 1,tm_E_dbl160_seed2,model,True,7.437,-4.521,3.259,9.224,20,0.848,10.17,0.018,data_tm_E_dbl160_seed2_1791183686.csv
+Replay double strokes 2,tm_E_dbl160_seed3,measured,True,8.037,-5.165,5.897,9.687,10,0.837,10.54,0.042,data_tm_E_dbl160_seed3_1791183707.csv
+Replay double strokes 2,tm_E_dbl160_seed3,model,True,9.612,-5.768,5.386,12.17,20,0.789,10.53,0.02,data_tm_E_dbl160_seed3_1791183707.csv
+Replay GMD 1,tm_E_gmd138_seed2,measured,True,10.94,-5.202,5.077,12.04,-10,0.684,17.06,0.029,data_tm_E_gmd138_seed2_1791183750.csv
+Replay GMD 1,tm_E_gmd138_seed2,model,True,11.77,-5.498,6.292,12.79,-10,0.632,16.9,0.057,data_tm_E_gmd138_seed2_1791183750.csv
+Replay GMD 2,tm_E_gmd138_seed3,measured,True,12.36,-5.75,6.444,13.52,-15,0.65,15.55,0.007,data_tm_E_gmd138_seed3_1791183793.csv
+Replay GMD 2,tm_E_gmd138_seed3,model,True,12.86,-5.64,7.324,13.96,-25,0.645,15.55,0.01,data_tm_E_gmd138_seed3_1791183793.csv

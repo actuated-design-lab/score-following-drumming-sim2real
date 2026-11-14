@@ -1,0 +1,19 @@
+method,task,n_draws,onsets_per_draw,success_mean,success_sd,ci95
+F0,b_holdout_00_bpm90,32,49.0000,0.7136,0.0939,0.0326
+F0,b_holdout_01_bpm96,32,55.0000,0.7295,0.0779,0.0270
+F0,double_lead2_bpm160,32,24.0000,0.6810,0.1205,0.0417
+F0,gmd_legacy_gmd_03_high_recut_bpm138,32,84.0000,0.7504,0.0811,0.0281
+F0,gmd_legacy_gmd_04_extreme_recut_bpm170,32,94.0000,0.7204,0.0749,0.0259
+E,b_holdout_00_bpm90,32,49.0000,0.8629,0.0877,0.0304
+E,b_holdout_01_bpm96,32,55.0000,0.8398,0.0726,0.0252
+E,double_lead2_bpm160,32,24.0000,0.6836,0.1187,0.0411
+E,gmd_legacy_gmd_03_high_recut_bpm138,32,84.0000,0.8795,0.0463,0.0161
+E,gmd_legacy_gmd_04_extreme_recut_bpm170,32,94.0000,0.8587,0.0484,0.0168
+B,b_holdout_00_bpm90,32,49.0000,0.5804,0.1164,0.0403
+B,b_holdout_01_bpm96,32,55.0000,0.6000,0.1394,0.0483
+B,double_lead2_bpm160,32,24.0000,0.4583,0.0993,0.0344
+B,gmd_legacy_gmd_03_high_recut_bpm138,32,84.0000,0.5037,0.1113,0.0386
+B,gmd_legacy_gmd_04_extreme_recut_bpm170,32,94.0000,0.4638,0.0946,0.0328
+B,mean of 5 tasks,32,,0.5212,0.0952,0.0330
+E,mean of 5 tasks,32,,0.8249,0.0457,0.0158
+F0,mean of 5 tasks,32,,0.7190,0.0576,0.0200

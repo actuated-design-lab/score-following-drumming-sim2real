@@ -1,0 +1,10 @@
+{
+ "kind": "playback",
+ "signal": "F0_b_holdout_01_bpm96.csv",
+ "elapsed_s": 22.94,
+ "packets_received": 4588,
+ "packets_expected_at_200hz": 4588,
+ "packet_yield": 1.0,
+ "bytes_discarded_on_resync": 0,
+ "bytes_discarded_at_sync": 0
+}

@@ -1,0 +1,48 @@
+{
+ "median": {
+  "wrist_rest": 4.5,
+  "grip_rest": 6.299999999999996,
+  "force_rest_med": -0.1966002380443861,
+  "force_rest_sd": 0.13236135929185056,
+  "wrist_lift1": 41.03999999999999,
+  "pDF_lift1": 0.3957628600895947,
+  "peak1_N": 13.033173619800408,
+  "peak1_ms": 180.00000000000017,
+  "grip_strike1": 4.680000000000001,
+  "wrist_lift2": 41.940000000000005,
+  "pDF_lift2": 0.39638327660577033,
+  "peak2_N": 20.342356639301755,
+  "peak2_ms": 169.99999999999994,
+  "grip_strike2": 4.680000000000001,
+  "grip_G0": 0.0,
+  "grip_G6": -0.35999999999999993,
+  "grip_resp": -0.35999999999999993,
+  "grip_range": 3.2399999999999998
+ },
+ "sd": {
+  "wrist_rest": 0.17999999999999972,
+  "grip_rest": 0.37469987990390513,
+  "force_rest_med": 0.0,
+  "force_rest_sd": 0.0058657250928700255,
+  "wrist_lift1": 1.0849884792015012,
+  "pDF_lift1": 0.0004110566561061126,
+  "peak1_N": 6.927522391701432,
+  "peak1_ms": 10.408329997330693,
+  "grip_strike1": 0.20784609690826547,
+  "wrist_lift2": 0.9913626985114966,
+  "pDF_lift2": 0.000108791733403312,
+  "peak2_N": 16.335443785471846,
+  "peak2_ms": 16.072751268321756,
+  "grip_strike2": 0.20784609690826494,
+  "grip_G0": 0.0,
+  "grip_G6": 0.0,
+  "grip_resp": 0.0,
+  "grip_range": 0.3600000000000001
+ },
+ "files": [
+  "data/user0/calibe2026/playback_20261111/data_check_motion_1794363168.csv",
+  "data/user0/calibe2026/playback_20261111/data_check_motion_1794363183.csv",
+  "data/user0/calibe2026/playback_20261111/data_check_motion_1794363199.csv"
+ ],
+ "n": 3
+}

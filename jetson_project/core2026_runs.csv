@@ -1,0 +1,71 @@
+no,phase,no_orig,rep,task,method,trial,bridge,command
+1,rl,3.0,1,double160,B,1,0,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/double_lead2_bpm160.mid --trial 1
+2,rl,5.0,1,double160,E,1,0,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/double_lead2_bpm160.mid --trial 1
+3,rl,6.0,1,holdout1,B,1,0,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/b_holdout_01_bpm96.mid --trial 1
+4,rl,9.0,1,holdout1,E,1,0,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/b_holdout_01_bpm96.mid --trial 1
+5,rl,13.0,1,holdout0,E,1,0,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/b_holdout_00_bpm90.mid --trial 1
+6,rl,14.0,1,holdout0,B,1,0,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/b_holdout_00_bpm90.mid --trial 1
+7,rl,16.0,1,gmd138,B,1,0,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/gmd_legacy_gmd_03_high_recut_bpm138.mid --trial 1
+8,rl,20.0,1,gmd138,E,1,0,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/gmd_legacy_gmd_03_high_recut_bpm138.mid --trial 1
+9,rl,21.0,1,gmd170,E,1,0,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/gmd_legacy_gmd_04_extreme_recut_bpm170.mid --trial 1
+10,rl,23.0,1,gmd170,B,1,0,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/gmd_legacy_gmd_04_extreme_recut_bpm170.mid --trial 1
+11,rl,27.0,2,holdout1,B,2,0,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/b_holdout_01_bpm96.mid --trial 2
+12,rl,29.0,2,holdout1,E,2,0,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/b_holdout_01_bpm96.mid --trial 2
+13,rl,34.0,2,gmd170,E,2,0,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/gmd_legacy_gmd_04_extreme_recut_bpm170.mid --trial 2
+14,rl,35.0,2,gmd170,B,2,0,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/gmd_legacy_gmd_04_extreme_recut_bpm170.mid --trial 2
+15,rl,36.0,2,gmd138,B,2,0,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/gmd_legacy_gmd_03_high_recut_bpm138.mid --trial 2
+16,rl,38.0,2,gmd138,E,2,0,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/gmd_legacy_gmd_03_high_recut_bpm138.mid --trial 2
+17,rl,41.0,2,holdout0,B,2,0,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/b_holdout_00_bpm90.mid --trial 2
+18,rl,43.0,2,holdout0,E,2,0,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/b_holdout_00_bpm90.mid --trial 2
+19,rl,46.0,2,double160,E,2,0,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/double_lead2_bpm160.mid --trial 2
+20,rl,48.0,2,double160,B,2,0,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/double_lead2_bpm160.mid --trial 2
+21,rl,51.0,3,gmd138,E,3,0,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/gmd_legacy_gmd_03_high_recut_bpm138.mid --trial 3
+22,rl,55.0,3,gmd138,B,3,0,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/gmd_legacy_gmd_03_high_recut_bpm138.mid --trial 3
+23,rl,56.0,3,holdout0,E,3,0,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/b_holdout_00_bpm90.mid --trial 3
+24,rl,57.0,3,holdout0,B,3,0,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/b_holdout_00_bpm90.mid --trial 3
+25,rl,62.0,3,double160,B,3,0,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/double_lead2_bpm160.mid --trial 3
+26,rl,63.0,3,double160,E,3,0,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/double_lead2_bpm160.mid --trial 3
+27,rl,68.0,3,holdout1,B,3,0,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/b_holdout_01_bpm96.mid --trial 3
+28,rl,69.0,3,holdout1,E,3,0,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/b_holdout_01_bpm96.mid --trial 3
+29,rl,73.0,3,gmd170,B,3,0,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/gmd_legacy_gmd_04_extreme_recut_bpm170.mid --trial 3
+30,rl,75.0,3,gmd170,E,3,0,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/gmd_legacy_gmd_04_extreme_recut_bpm170.mid --trial 3
+31,ff,1.0,1,double160,F3,1,0,python3 tools/run_signal_playback.py core2026/F3_double_lead2_bpm160
+32,ff,,1,double160,E,4,1,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/double_lead2_bpm160.mid --trial 4
+33,ff,,1,double160,B,4,1,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/double_lead2_bpm160.mid --trial 4
+34,ff,2.0,1,double160,F0,1,0,python3 tools/run_signal_playback.py core2026/F0_double_lead2_bpm160
+35,ff,7.0,1,holdout1,F3,1,0,python3 tools/run_signal_playback.py core2026/F3_b_holdout_01_bpm96
+36,ff,,1,holdout1,E,4,1,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/b_holdout_01_bpm96.mid --trial 4
+37,ff,10.0,1,holdout1,F0,1,0,python3 tools/run_signal_playback.py core2026/F0_b_holdout_01_bpm96
+38,ff,,1,holdout1,B,4,1,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/b_holdout_01_bpm96.mid --trial 4
+39,ff,12.0,1,holdout0,F3,1,0,python3 tools/run_signal_playback.py core2026/F3_b_holdout_00_bpm90
+40,ff,15.0,1,holdout0,F0,1,0,python3 tools/run_signal_playback.py core2026/F0_b_holdout_00_bpm90
+41,ff,,1,holdout0,E,4,1,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/b_holdout_00_bpm90.mid --trial 4
+42,ff,,1,holdout0,B,4,1,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/b_holdout_00_bpm90.mid --trial 4
+43,ff,,1,gmd138,B,4,1,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/gmd_legacy_gmd_03_high_recut_bpm138.mid --trial 4
+44,ff,18.0,1,gmd138,F0,1,0,python3 tools/run_signal_playback.py core2026/F0_gmd_legacy_gmd_03_high_recut_bpm138
+45,ff,19.0,1,gmd138,F3,1,0,python3 tools/run_signal_playback.py core2026/F3_gmd_legacy_gmd_03_high_recut_bpm138
+46,ff,,1,gmd138,E,4,1,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/gmd_legacy_gmd_03_high_recut_bpm138.mid --trial 4
+47,ff,22.0,1,gmd170,F0,1,0,python3 tools/run_signal_playback.py core2026/F0_gmd_legacy_gmd_04_extreme_recut_bpm170
+48,ff,25.0,1,gmd170,F3,1,0,python3 tools/run_signal_playback.py core2026/F3_gmd_legacy_gmd_04_extreme_recut_bpm170
+49,ff,,1,gmd170,E,4,1,python3 src/deploy_policy.py --model GEN2B/E --midi songs/core2026/gmd_legacy_gmd_04_extreme_recut_bpm170.mid --trial 4
+50,ff,,1,gmd170,B,4,1,python3 src/deploy_policy.py --model GEN2B/B --midi songs/core2026/gmd_legacy_gmd_04_extreme_recut_bpm170.mid --trial 4
+51,ff,28.0,2,holdout1,F3,2,0,python3 tools/run_signal_playback.py core2026/F3_b_holdout_01_bpm96
+52,ff,30.0,2,holdout1,F0,2,0,python3 tools/run_signal_playback.py core2026/F0_b_holdout_01_bpm96
+53,ff,31.0,2,gmd170,F0,2,0,python3 tools/run_signal_playback.py core2026/F0_gmd_legacy_gmd_04_extreme_recut_bpm170
+54,ff,32.0,2,gmd170,F3,2,0,python3 tools/run_signal_playback.py core2026/F3_gmd_legacy_gmd_04_extreme_recut_bpm170
+55,ff,37.0,2,gmd138,F0,2,0,python3 tools/run_signal_playback.py core2026/F0_gmd_legacy_gmd_03_high_recut_bpm138
+56,ff,39.0,2,gmd138,F3,2,0,python3 tools/run_signal_playback.py core2026/F3_gmd_legacy_gmd_03_high_recut_bpm138
+57,ff,42.0,2,holdout0,F3,2,0,python3 tools/run_signal_playback.py core2026/F3_b_holdout_00_bpm90
+58,ff,44.0,2,holdout0,F0,2,0,python3 tools/run_signal_playback.py core2026/F0_b_holdout_00_bpm90
+59,ff,49.0,2,double160,F0,2,0,python3 tools/run_signal_playback.py core2026/F0_double_lead2_bpm160
+60,ff,50.0,2,double160,F3,2,0,python3 tools/run_signal_playback.py core2026/F3_double_lead2_bpm160
+61,ff,52.0,3,gmd138,F3,3,0,python3 tools/run_signal_playback.py core2026/F3_gmd_legacy_gmd_03_high_recut_bpm138
+62,ff,54.0,3,gmd138,F0,3,0,python3 tools/run_signal_playback.py core2026/F0_gmd_legacy_gmd_03_high_recut_bpm138
+63,ff,59.0,3,holdout0,F0,3,0,python3 tools/run_signal_playback.py core2026/F0_b_holdout_00_bpm90
+64,ff,60.0,3,holdout0,F3,3,0,python3 tools/run_signal_playback.py core2026/F3_b_holdout_00_bpm90
+65,ff,64.0,3,double160,F0,3,0,python3 tools/run_signal_playback.py core2026/F0_double_lead2_bpm160
+66,ff,65.0,3,double160,F3,3,0,python3 tools/run_signal_playback.py core2026/F3_double_lead2_bpm160
+67,ff,66.0,3,holdout1,F0,3,0,python3 tools/run_signal_playback.py core2026/F0_b_holdout_01_bpm96
+68,ff,67.0,3,holdout1,F3,3,0,python3 tools/run_signal_playback.py core2026/F3_b_holdout_01_bpm96
+69,ff,71.0,3,gmd170,F0,3,0,python3 tools/run_signal_playback.py core2026/F0_gmd_legacy_gmd_04_extreme_recut_bpm170
+70,ff,74.0,3,gmd170,F3,3,0,python3 tools/run_signal_playback.py core2026/F3_gmd_legacy_gmd_04_extreme_recut_bpm170

@@ -1,0 +1,18 @@
+# MicroLabBox が送ってくる圧力の 3 つの枠（受信データの 0, 1, 2 番目）に、どの筋（レギュレータ）の圧力が入っているか。
+# 実機の配線・配管を変えたら tools/check_pressure_channels.py で確かめて、current を書き換え、history に残す。
+# src/microlabbox.py と tools/run_signal_playback.py はこれを読み、ログの meas_pres_DF / F / G を「その筋の圧力」にそろえて保存し、
+# そろえたことを示す列 pres_mapped = 1 を付ける（この列がないログは、そろえる前の古い並び）。
+current: [DF, F, G]        # 2026-11-09 確認（check_pressure_channels.py：DF → 1 つめ +0.195、F → 2 つめ +0.197、G → 3 つめ +0.196 MPa）
+
+history:                   # 古い順。slots = その期間に実際に入っていた筋
+  - until: 2026-10-26      # 10/5 の打撃・テスト動作、10/14 の静的な試験など。ログの列名どおりではない（DF と F が入れ替わり）
+    slots: [F, DF, G]
+  - until: 2026-10-29      # PAM 単体試験のあと〜10/29 昼（grip_release のログ）。1 つめ = G、2 つめ = F、3 つめ = DF
+    slots: [G, F, DF]
+  - until: 2026-10-30?     # 10/29 14:07 に確認して config を [DF, G, F] にした。10/29 夕方のログ（playback_20261029 の tm_*）は正しい
+    slots: [DF, G, F]      #   （指令 F と meas_pres_F の相関 0.92）。次の並びに変わった日時は不明（10/30〜11/02 のどこか）
+  - until: 2026-11-09      # 配線が [DF, F, G] に変わっていたのに、config は [DF, G, F] のままだった（11/09 朝に発見）
+    slots: [DF, F, G]      # → この期間の pres_mapped = 1 のログは meas_pres_F と meas_pres_G が入れ替わっている（列 F の中身 = G、列 G の中身 = F）
+                           #   11/03〜11/05 の全ログ（access2026・access2026v2・sss2026・demo2026・mocktest）で、指令 F と相関するのは meas_pres_G（0.85〜0.93）
+                           #   影響：obs v2 の方策（GEN2B/B・E）は、この期間の実機で F と G の圧力を入れ替えた観測で動いていた。
+                           #   採点（ロードセルの力）と FF（開ループの指令）は影響なし。実測圧を使う解析は列を入れ替えて読む
